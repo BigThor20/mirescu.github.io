@@ -1,0 +1,113 @@
+/**
+
+  Use animations here. Useful resources on http://docs.codacloud.net
+
+**/
+
+
+.head {
+  animation-name: head1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 0;
+  
+
+}
+
+@keyframes head1 {
+  from {
+    transform: translate(0px, 10px);
+  }
+  
+
+  
+
+  to {
+    transform: translate(0px, -10px);
+  }
+}
+
+.body {
+  animation-name: body1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 0;
+  
+}
+
+@keyframes body1{
+  from {
+    transform: translate(0px, 10px);
+  }
+  
+
+  50% {
+    transform: translate(3px, -5px);
+  }
+
+  to {
+    /* transform: translate(13px, 0px); */
+    transform: translate(5px, -10px);
+  }
+}
+
+.left.hand {
+  animation-name: lefthandHi;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 0;
+}
+
+@keyframes leftFootRotate {
+  from {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(160deg);
+  }
+}
+
+@keyframes rightFootRotate {
+  from {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-160deg);
+  }
+}
+
+.right.hand {
+  animation-name: rightFootRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 0;
+
+}
+
+.left.foot {
+  animation-name: leftFootRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 0;
+
+}
+
+@keyframes righthandHi {
+  from {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-160deg);
+  }
+}
+
+.right.foot {
+  animation-name: rightFootRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 0;
+
+}
